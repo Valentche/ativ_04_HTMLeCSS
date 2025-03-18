@@ -1,0 +1,58 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho{
+    background-color: #9e0000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.conteudo{
+    padding: 20px;
+    display: flex; /*aq ele vai deixar as aequipes lado a lado, ao inves de uma lista*/
+    flex-wrap: wrap; /*quebra as caixas para a proxima linha*/
+    gap: 20px; /*só o espaço entre as caixas*/
+}
+.projeto {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px; /*Espacamento da borda*/
+    border-radius: 10px; /*Deixa arredondado as bordas*/
+    box-shadow: 0 0 10px rgba(0, 0, 0,  0.1); /*Da a sombrinha no quadrado*/
+    flex: 1 1 calc(33.333% - 40px); /*define o tamanho das caixas de equipe, ESSA EU TIVE QUE DAR UMA PESQUISADA BRABA KKKK*/
+    max-width: 1 1 calc(33.333% - 40px); /*aq ele vai deixar uma equipe ao lado da outra em duas colunas, ja que ele mede a largura, OBS: SEM O 1 1 NO COMEÇO ELE DEIXA 2 MAS SOBRA ESPAÇO NA TELA*/
+    display: flex; /*Deixou a imagem centraliazada entre os textos, como se fosse uma caixa, o flex deixava tudo lado a lado, bugando as palavras*/
+    flex-direction: column;
+    align-items: center; /*alinahmento né*/
+    text-align: center;
+}
+.projeto h2 {
+    color: #000000;
+}
+body img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
